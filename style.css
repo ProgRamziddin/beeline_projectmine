@@ -112,7 +112,7 @@ a,span,label{
         column-gap: 8px;
         margin: 20px 0px;
     }
-    .sms, .sms2{
+    .sms, .sms1, .sms2{
         font-size: 18px;
         padding: 8px ;
     }
@@ -285,7 +285,7 @@ a,span,label{
     }
 }
 @media(max-width:650px){
-    .sms, .sms2{
+    .sms {
         font-size: 10px;
         padding: 3px;
     }
@@ -401,9 +401,6 @@ a,span,label{
     }
 }
 @media(max-width:350px){
-    .volt2{
-       
-    }
     .text1{
         font-size: 16px;
     }
