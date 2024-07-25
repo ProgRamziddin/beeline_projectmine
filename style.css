@@ -1,0 +1,432 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+a,span,label{
+   display: inline-block;
+}
+.big{
+    margin: 80px auto;
+    max-width: 1700px;
+    border: 3px solid black;
+    box-shadow: 10px 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 30px;
+}
+.grid{
+    display: grid;
+    gap: 15px;
+    grid-template-areas:
+       'a b b c'
+       'a d e f' ;
+}
+.volt{
+    padding: 0px 20px ;
+    color: black;
+    flex-direction: column;
+    display: flex; 
+    padding-top: 8px;
+    justify-content: space-between;
+}
+.volt1{
+    background-color: #DAECD5;
+    grid-area: a;
+    background-image:url(messi.png) ;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 450px;
+}
+.volt2{
+    background-color: #F6F4D8;
+    grid-area: b;
+    background-image: url(mini_09-ROBERT_LEWANDOWSKI.webp);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right;
+}
+.volt3{
+    background-color: #F6D9E7;
+    grid-area: c;
+}
+.volt4{
+    background-color: #DAEAF7;
+    grid-area: d;
+}
+.volt5{
+    background-color: #D7EDE9;
+    grid-area: e;
+}
+.volt6{
+    background-color:#F7E4D0 ;
+    grid-area: f;
+}
+.text1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.link{
+    border: 4px solid black;
+    padding: 10px;
+    font-size: 20px;
+    margin: 20px 0px;
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    text-align: center;
+    
+}
+.text2{
+    width: 80%;
+    font-size: 22px;
+    margin: 20px 0px;
+}
+.digit{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr 1fr 1fr 2.4fr 1fr ;
+    column-gap: 10px;
+    margin: 30px 0px;
+}
+.sms, .sms1, .sms2{
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+@media(max-width:1680px){
+    .serves{
+        font-size: 33px;
+    }
+    .digit{
+        padding: 10px 0px;
+        column-gap: 8px;
+        margin: 20px 0px;
+    }
+    .sms, .sms2{
+        font-size: 18px;
+        padding: 8px ;
+    }
+    .link{
+        font-size: 18px;
+        padding: 8px;
+        border: 3px solid black;
+    }
+    .text1{
+        font-size: 27px;
+        font-weight: 650;
+    }
+    .text2{
+       margin: 18px 0px ;
+       font-size: 18px;
+
+    }
+    .volt2{
+      background-size: 28%;
+    } 
+    .volt1{
+        background-size: 400px;
+    }
+
+}
+@media(max-width:1450px){
+    .volt2{
+        background-size: 31%;
+    }
+    .big{
+        margin: 60px 0px;
+    }
+    .serves{
+        font-size: 30px;
+    }
+    .digit{
+        padding: 5px 0px;
+    }
+    .sms, .sms1, .sms2{
+        padding: 6px;
+        font-size: 15px;
+    }
+    .grid{
+        gap: 12px;
+    }
+    .text1{
+        font-size:24px;
+    }
+    .volt1{
+        background-size: 330px;
+    }
+    .volt{
+        padding: 0px 15px;
+        padding-top:6px ;
+    }
+    .text2{
+        font-size: 16px;
+    }
+    .link{
+        margin: 15px 0px;
+        padding: 6px;
+        font-size: 16px;
+    }
+}
+@media(max-width:1200px){
+    .big{
+        margin: 40px 0px;
+    }
+    .serves{
+        font-size: 28px;
+    }
+    .digit{
+        margin: 15px 0px;
+    }
+    .sms, .sms1, .sms2{
+        padding: 5px;
+        font-size: 12px;
+        border: 2px solid black;
+    }
+    .grid{
+        gap: 10px;
+    }
+    .volt{
+        padding: 0px 12px;
+        padding-top: 5px;
+    }
+    .text1{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .text2{
+        margin: 10px 0px;
+        font-size: 12px;
+    }
+    .link{
+        border: 2px solid black;
+        font-size: 14px;
+        padding: 4px;
+        margin: 12px 0px ;
+    }
+    .volt1{
+        background-size: 280px;
+    }
+    .volt2{
+        background-size: 27%;
+    }
+}
+@media(max-width:1000px){
+     .big{
+        margin: 20px 0px;
+     }
+     .digit{
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.8fr 1fr 1fr;
+     }
+     .sms1{
+        display: none;
+     }
+     .grid{
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr;
+        grid-template-areas:
+          'a b'
+          'c d'
+          'e f'
+        ;
+        gap: 15px;
+     }
+     .text1{
+        font-size: 23px;
+        font-weight: 630;
+     }
+     .sms, .sms2{
+        font-size: 16px;
+     }
+     .text2{
+        font-size: 16px;
+     }
+     .link{
+        font-size: 15px;
+     }
+     .volt1{
+        background-position: right bottom;
+        background-size: 270px;
+     }
+     .volt2{
+        background-position: right bottom;
+        background-size: 45%;
+     }
+
+}
+@media(max-width:850px){
+    .sms, .sms2{
+        font-size: 12px;
+        padding: 4px;
+    }
+    .text1{
+        font-size: 20px;
+    }
+    .text2{
+        font-size: 14px;
+    }
+    .link{
+        padding: 4px;
+        margin: 5px 0px;
+        width: 100px;
+    }
+    .volt1{
+        background-size: 240px;
+    }
+}
+@media(max-width:650px){
+    .sms, .sms2{
+        font-size: 10px;
+        padding: 3px;
+    }
+    .big{
+        margin: 10px;
+        padding: 15px;
+    }
+    .digit{
+        column-gap: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .text1{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .text2{
+        font-size: 10px;
+    }
+    .serves{
+        font-size: 25px;
+    }
+    .volt1{
+        background-size: 180px;
+        background-position: center bottom;
+    }
+    .volt2{
+        background-size: 45%;
+        background-position: center bottom;
+    }
+    .big{
+        border: 2px solid black;
+        box-shadow: 0px 0px 0px;
+        padding: 10px;
+    }
+    .grid{
+        gap: 12px;
+    }
+    .volt{
+        padding: 0px 10px;
+        padding-top: 5px;
+    }
+    .link{
+        font-size: 11px;
+        width: 70px;
+        padding: 3px;
+    }
+    .sms2{
+        display: none;
+    }
+    
+}
+@media(max-width:550px){
+    .volt2{
+        background-size: 58%;
+    }
+}
+@media(max-width:450px){
+    .text1{
+        font-size: 14px;
+    }
+    .text2{
+        font-size: 9px;
+    }
+    .serves{
+        font-size: 20px;
+    }
+    .volt2{
+        background-size:70% ;
+    }
+}
+@media(max-width:390px){
+    .digit{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .sms{
+        margin-bottom: 10px;
+    }
+    .grid{
+        display: grid;
+        grid-template-rows: 2fr 2fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          'a'
+          'b'
+          'c'
+          'd'
+          'e'
+          'f'
+        ;
+    }
+    .volt{
+        text-align: center;
+    }
+    .link{
+        font-size: 15px;
+        padding: 3px 15px;
+        width: 30%;
+    }
+    .text2{
+        width: 100%;
+        font-size: 12px;
+    }
+    .text1{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .text2{
+        font-size: 15px;
+    }
+    .volt2{
+        background-size: 45%;
+    }
+}
+@media(max-width:350px){
+    .volt2{
+       
+    }
+    .text1{
+        font-size: 16px;
+    }
+    .text2{
+        font-size: 12px;
+    }
+    .link{
+        font-size: 12px;
+    }
+}
+@media(max-width:290px){
+    .volt2{
+        background-size: 70%;
+    }
+}
+@media(max-width:250px){
+    .text1{
+        font-size: 15px;
+    }
+    .text2{
+        font-size: 10px;
+    }
+    .link{
+        font-size: 10px;
+    }
+}
